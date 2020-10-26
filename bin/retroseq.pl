@@ -196,9 +196,9 @@ Usage: $0 -call -bam <string> -input <string> -ref <string> -output <string> [ -
     -output         Output file name (VCF)
     [-filter        Tab file with TE type and BED file of reference elements. These will be filtered out from the calling.]
     [-region        Call a particular chromosome only (chr) OR region (chr:start-end) only]
-    [-depth         Max average depth of a region to be considered for calling. Default is 200.]
-    [-reads         It is the minimum number of reads required to make a call. Default is 5.]
-    [-q             Minimum mapping quality for a read mate that anchors the insertion call. Default is 30.]
+    [-depth         Max average depth of a region to be considered for calling. Default is $DEFAULT_MAX_DEPTH.]
+    [-reads         It is the minimum number of reads required to make a call. Default is $DEFAULT_READS.]
+    [-q             Minimum mapping quality for a read mate that anchors the insertion call. Default is $DEFAULT_ANCHORQ.]
     [-ignoreRGs     Single read group name OR a file of readgroups that should be ignored. Default is none.]
     [-soft          Include soft clipped reads when calling. HIGHLY RECOMMENDED for BWA-MEM alignments.]
     [-noclean       Do not remove intermediate output files. Default is to cleanup.]
